@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#frame {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/frame.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	position: fixed;
+	z-index: 10;
+}
+#doors {
+	width: 100vw;
+	display: flex;
+}
+.door {
+	background-image: url(../images/door.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: top center;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	z-index: 5;
+}
+
+.leftOpen {
+	top: 0;
+	left: -40%;
+	transition: 0.5s ease-out;
+}
+.left {
+	top: 0;
+	left: 0;
+	transition: 0.5s ease-out;
+}
+.rightOpen {
+	top: 0;
+	right: -40%;
+	transition: 0.5s ease-out;
+}
+.right {
+	top: 0;
+	right: 0;
+	transition: 0.5s ease-out;
+}
